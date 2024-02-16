@@ -27,5 +27,5 @@ if __name__ == "__main__":
             filepaths_and_text[i][args.text_index] = cleaned_text
 
         new_filelist = filelist + "." + args.out_extension
-        with open(new_filelist, "w", encoding="utf-8") as f:
+        with open(new_filelist, "w", encoding="utf-16") as f:
             f.writelines(["|".join(x) + "\n" for x in filepaths_and_text])
