@@ -120,3 +120,11 @@ def english_cleaners3(text):
     phonemes = backend.phonemize([text], strip=True)[0]
     phonemes = collapse_whitespace(phonemes)
     return phonemes
+
+#Arabic cleaners
+ar_backend = EspeakBackend("ar", preserve_punctuation=True, with_stress=True)
+
+def arabic_cleaners(text):
+    phonemes = ar_backend.phonemize([text])[0]
+    phonemes = collapse_whitespace(phonemes)
+    return phonemes
