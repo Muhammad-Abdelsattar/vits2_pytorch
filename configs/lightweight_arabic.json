@@ -18,8 +18,8 @@
     },
     "data": {
       "use_mel_posterior_encoder": true,
-      "training_files":"filelists/training_clean.txt.cleaned",
-      "validation_files":"filelists/validation_clean.txt.cleaned",
+      "training_files":"filelists/clartts_train.txt.cleaned",
+      "validation_files":"filelists/clartts_valid.txt.cleaned",
       "text_cleaners":["arabic_cleaners"],
       "max_wav_value": 32768.0,
       "sampling_rate": 16000,
